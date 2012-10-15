@@ -1,0 +1,24 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+<div id="steps">
+  <section class="step step-1">
+    <h2><span class="numeral">1</span> Upload a file:</h2>
+    <div class="fileupload">
+      <input type="file" id="fileupload">
+    </div>
+  </section>
+  <section class="step step-2">
+    <h2><span class="numeral">2</span> Choose a layout:</h2>
+    <div class="choose-layout">
+      <ul class="layout-types">
+        <li><a href="#" name="desktop">Desktop</a></li>
+        <li><a href="#" name="mobile">Mobile</a></li>
+        <li><a href="#" name="other">Other</a></li>
+      </ul>
+      <div class="layouts">
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+

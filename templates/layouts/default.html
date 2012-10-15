@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>The Screenshot Maker</title>
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<script src="http://use.edgefonts.net/maven-pro.js"></script>
+<script src="http://use.edgefonts.net/league-gothic.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header id="top">
+      <h1 id="branding"><a href="/"><span class="screenshot">Screenshot</span> <span class="maker">Maker<span></a></h1>
+      <h2 class="subheading">Making presetable web &amp; mobile screenshots</h2>
+      <hr class="clear">
+    </header>
+    <div id="main">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@docwidth: 960px;
+@colwidth: 60px;
+@colpad: 10px;
+
+.col(@n) {
+  width: @colwidth * @n + @colpad * (@n - 1) * 2;
+}
+.pad(@n) {
+  margin-left: @colwidth * @n + @colpad * (@n + .5) * 2;
+}
+.container {
+/*  width: 960px;*/
+  margin: 0px auto;
+}
+.col_1, 
+.col_2, 
+.col_3, 
+.col_4, 
+.col_5, 
+.col_6, 
+.col_7, 
+.col_8, 
+.col_9, 
+.col_10, 
+.col_11, 
+.col_12 {
+  width: @colwidth;
+  margin: 0px @colpad;
+  float: left;
+}
+.col_1 {
+  .col(1);
+}
+.col_2 {
+  .col(2);
+}
+.col_3 {
+  .col(3);
+}
+.col_4 {
+  .col(4);
+}
+.col_5 {
+  .col(5);
+}
+.col_6 {
+  .col(6);
+}
+.col_7 {
+  .col(7);
+}
+.col_8 {
+  .col(8);
+}
+.col_9 {
+  .col(9);
+}
+.col_10 {
+  .col(10);
+}
+.col_11 {
+  .col(11);
+}
+.col_12 {
+  .col(12);
+}
+.pad_1 {
+  .pad(1);
+}
+.pad_2 {
+  .pad(2);
+}
+.pad_3 {
+  .pad(3);
+}
+.pad_4 {
+  .pad(4);
+}
+.pad_5 {
+  .pad(5);
+}
+.pad_6 {
+  .pad(6);
+}
+.pad_7 {
+  .pad(7);
+}
+.pad_8 {
+  .pad(8);
+}
+.pad_9 {
+  .pad(9);
+}
+.pad_10 {
+  .pad(10);
+}
+.pad_11 {
+  .pad(11);
+}
+.clear {
+  clear: both;
+  border: 0px none;
+}
